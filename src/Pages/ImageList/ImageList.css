@@ -1,0 +1,106 @@
+.image-list {
+    margin: 20px;
+    width: auto;
+  }
+  
+  .table-data {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .table-data th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dfd6d6;
+    color: #de3063;
+
+  }
+  .table-data td {
+    color: #9f9f9f;
+    font-size: 18px;
+    font-weight: 100;
+    
+  }
+  .tabledesc{
+    width: 40%;
+    font-size: 15px;
+   
+  }
+  
+  .t-head {
+    background: linear-gradient(
+        to left, 
+        #de3063 -200%, 
+        rgba(0, 0, 0, 1) 100% 
+        );
+  }
+  
+  .image-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .icon-button svg:hover {
+    color: #de3063;
+  }
+  
+  .icon-button svg {
+    width: 18px;
+    height: 18px;
+    color: #fbfafa;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #de3063;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .pagination button:hover {
+    background-color: #c52b5e; 
+  }
+  
+  .pagination .active {
+    background-color: #0d0d0d; 
+  }
+  
+  .pagination button:disabled {
+    background-color: #524f4f;
+    cursor: not-allowed; 
+  }
+  .active {
+    background-color: #de3063; 
+    color: white; 
+  }
+
+  
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-list{
+    margin-top: 25%;
+  }
+  .responsive-data{
+    display: none;
+  }
+  .pagination button{
+    padding: 1px 4px;
+  }
+}

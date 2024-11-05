@@ -1,0 +1,63 @@
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.main-container {
+    display: flex;
+    height: 100%;
+     background: linear-gradient(
+    to left, 
+    #de3063 -200%, 
+    rgba(0, 0, 0, 1) 80% 
+    );
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #282c34;
+    padding: 20px;
+    transition: 1s ease-in-out;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background: linear-gradient(
+    to left, 
+    #de3063 -200%, 
+    rgba(0, 0, 0, 1) 80% 
+    );
+    margin-top: 5%;
+    height: 100%;
+   
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: 100%; 
+      padding: 10px;
+      position: relative; 
+      z-index: 1000; 
+      transform: translateX(0); 
+    }
+  
+    .content {
+      padding: 10px; 
+      margin-top: 0; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      transform: translateX(-100%); 
+      transition: transform 2s ease;
+    }
+  
+    .sidebar.visible {
+      transform: translateX(0);
+    }
+  
+    .content {
+      padding: 5px; 
+    }
+  }

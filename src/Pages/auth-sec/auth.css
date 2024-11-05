@@ -1,0 +1,124 @@
+
+.reg-parent{
+    background: linear-gradient(
+        to left, 
+        #de3063 -200%, 
+        rgba(0, 0, 0, 1) 80% 
+        );
+        height: 100vh;
+        padding: 50px;
+}
+  /* Container */
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background:linear-gradient(
+        to left, 
+        #de3063 -100%, 
+        rgba(0, 0, 0, 1) 200% 
+        );
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 253, 253, 0.1);
+  }
+  
+  /* Title */
+  .register-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #dedede;
+  }
+  
+  /* Form */
+  .register-form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label */
+  .form-label {
+    display: block;
+    font-size: 1rem;
+    color: #9f9f9f;
+    margin-bottom: 5px;
+  }
+  
+  /* Input */
+  .form-input {
+    
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 2px solid rgb(243, 239, 239);
+    background: transparent;
+    border-radius: 5px;
+  }
+  .link-sec p {
+    color: white;
+  }
+  
+  /* Button */
+  .submit-button {
+    width: 40%;
+    padding: 10px;
+    background-color: #de3063;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color:#000;
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .register-container {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .register-title {
+      font-size: 2em;
+    }
+  
+    .form-input, .submit-button {
+      font-size: 0.9rem;
+      width: 90%;
+    }
+    .link-sec p {
+      color: white;
+      font-size: 13px;
+    }
+    .submit-button{
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-title {
+      font-size: 1.2em;
+    }
+  
+    .form-label {
+      font-size: 0.9rem;
+    }
+  
+    .form-input, .submit-button {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  }
+  

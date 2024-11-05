@@ -1,0 +1,93 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(
+    to left, 
+    #de3063 -200%, 
+    rgba(0, 0, 0, 1) 80%
+  );
+  color: white;
+  position: fixed;
+  z-index: 999; /* Ensure topbar stays on top */
+}
+
+.topbar__left{
+  display: flex;
+  gap: 10px;
+}
+.topbar__left .logo {
+  width: 50px;
+  height: auto;
+}
+
+.topbar__center .title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.topbar__right {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.topbar__right button {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.topbar__right button svg {
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* Toggle Button Styling */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.toggle-btn:hover {
+  color: #de3063; /* Add hover effect */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .topbar{
+    justify-content: first baseline;
+    width: 80%;
+    
+  }
+  .topbar__left .logo {
+    display: none; 
+  }
+
+  .topbar__center .title {
+    display: none; 
+  }
+
+  .topbar__right {
+    font-size: 25px;
+    margin-right: 15%; /* Adjust right margin */
+  }
+
+  .topbar__right button svg {
+    font-size: 25px; /* Reduce icon size */
+  }
+
+  .toggle-btn {
+    font-size: 22px; /* Adjust toggle button size */
+  }
+}
+
+
