@@ -258,7 +258,7 @@ const Register = () => {
       setTimeout(() => {
         dispatch(resetSuccessMessage());
         navigate("/login");
-      }, 4000);
+      }, 2000);
     }
   }, [successMsg, dispatch, navigate]);
 
