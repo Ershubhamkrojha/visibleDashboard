@@ -16,7 +16,7 @@ import Register from './Pages/auth-sec/Register';
 
 function App() {
   const dispatch = useDispatch();
-  const [activeModule, setActiveModule] = useState('');
+  const [activeModule, setActiveModule] = useState('Login');
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const { isAuthenticated, user } = useSelector((state) => state.auth);
 
@@ -44,7 +44,7 @@ function App() {
         handleLogout();
         return <Navigate to="/login" replace />;
       default:
-        return <Dashboard />;
+        return <Login />;
     }
   };
 
